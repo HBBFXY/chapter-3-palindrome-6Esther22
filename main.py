@@ -1,8 +1,13 @@
-num=input("请输入一个5位数:")
-if len(num)!=5 or not num.isdigit():
-    print("输入错误,请输入一个5位纯数字!")
+# main.py
+# 获取用户输入
+num = input("请输入一个5位数字：")
+
+# 检查输入是否为5位且纯数字
+if len(num) != 5 or not num.isdigit():
+    print("错误提示：输入必须是5位纯数字！")
 else:
-    if num==num[::-1]:
-        print("{:}是回文数".format(num)) 
+    # 判断是否为回文数
+    if num == num[::-1]:
+        print("是回文数")
     else:
-        print("{:}不是回文数".format(num))
+        print("不是回文数")
